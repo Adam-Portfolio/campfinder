@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampFinder</title>
+    <!-- Bootstrap 5.2.2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <!-- Custom File Input -->
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <!-- Mapbox GL JS CDN -->
+    <script
+      src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+    <!-- app.css -->
+    <link rel="stylesheet" href="/stylesheets/app.css" />
+  </head>
+
+  <body class="d-flex flex-column min-vh-100">
+    <%- include('../partials/navbar')%>
+    <main class="container mt-5">
+      <%- include('../partials/flash')%> <%- body %>
+    </main>
+    <%- include('../partials/footer')%>
+    <script src="/javascripts/validateForms.js"></script>
+    <script src="/javascripts/displayFileImages.js"></script>
+  </body>
+</html>
